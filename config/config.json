@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "zip-files-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/zipFiles/ZipFilesWebPart.js",
+          "manifest": "./src/webparts/zipFiles/ZipFilesWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ZipFilesWebPartStrings": "lib/webparts/zipFiles/loc/{locale}.js"
+  }
+}

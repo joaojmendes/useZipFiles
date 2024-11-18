@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.18.0",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.24.0"
+    },
+    "version": "1.20.0",
+    "libraryName": "zip-files",
+    "libraryId": "04fec24b-a811-46da-a366-279b1c0b10ee",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "zipFiles",
+    "solutionShortDescription": "zipFiles description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
