@@ -73,7 +73,7 @@ const useStyles = () => {
       color: ${tokens.colorStatusDangerForeground1};
     `,
     sucessText: css`
-      color:  ${tokens.colorStatusSuccessBackground1};
+      color:  ${tokens.colorBrandForeground1};
     `,
   };
 };
@@ -254,7 +254,6 @@ export const useZipFiles = ({ context, theme = "webLight" }: UseZipFilesProps) =
       try {
         setMessage({ text: "Creating ZIP file...", type: "success" });
         const content = await zip.generateAsync({ type: "blob" });
-
         saveAs(content, fileName);
         setIsComplete(true);
         setMessage({ text: "Your ZIP file was created and downloaded!", type: "success" });
@@ -301,7 +300,7 @@ export const useZipFiles = ({ context, theme = "webLight" }: UseZipFilesProps) =
                       <Spinner label="Compressing files..." size="medium" labelPosition="above" />
                     </>
                   )}
-                  {errors.length && (
+                  {errors.length > 0 && (
                     <div className={styles.errorLogContainer}>
                       <Text>Error Log:</Text>
                       <ErrorList errors={errors} />
@@ -312,7 +311,7 @@ export const useZipFiles = ({ context, theme = "webLight" }: UseZipFilesProps) =
               <DialogActions>
                 <DialogTrigger disableButtonEnhancement>
                   <Button appearance="secondary" onClick={() => setIsDialogOpen(false)}>
-                    Close
+                    { isComplete ? "Close"  : "Cancel"}
                   </Button>
                 </DialogTrigger>
               </DialogActions>
