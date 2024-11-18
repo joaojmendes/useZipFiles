@@ -1,73 +1,32 @@
-# zip-files
+# Introducing `useZipFiles`: A Powerful React Hook for Creating and Downloading ZIP Files
 
-## Summary
-
-Short summary on functionality and used technologies.
-
-[picture of the solution in action, if possible]
-
-## Used SharePoint Framework Version
-
-![version](https://img.shields.io/badge/version-1.20.0-green.svg)
-
-## Applies to
-
-- [SharePoint Framework](https://aka.ms/spfx)
-- [Microsoft 365 tenant](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
-
-> Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
-
-## Prerequisites
-
-> Any special pre-requisites?
-
-## Solution
-
-| Solution    | Author(s)                                               |
-| ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
-
-## Version history
-
-| Version | Date             | Comments        |
-| ------- | ---------------- | --------------- |
-| 1.1     | March 10, 2021   | Update comment  |
-| 1.0     | January 29, 2021 | Initial release |
-
-## Disclaimer
-
-**THIS CODE IS PROVIDED _AS IS_ WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
+Managing file downloads and creating ZIP archives can be challenging, especially when dealing with APIs like SharePoint or Microsoft Graph. To simplify this process, I’ve built a versatile React hook, `useZipFiles`, which allows you to fetch files or folders, compress them into a ZIP file, and trigger a download—all in one streamlined package.
 
 ---
 
-## Minimal Path to Awesome
+## 🚀 Features of `useZipFiles`
 
-- Clone this repository
-- Ensure that you are at the solution folder
-- in the command-line run:
-  - **npm install**
-  - **gulp serve**
+1. **Supports SharePoint and Microsoft Graph APIs**: Fetch files and folders seamlessly from both APIs.
+2. **Recursive Folder Handling**: Automatically fetches nested folders and their contents.
+3. **Download Progress Dialog**: Displays download progress with Fluent UI components.
+4. **Retry Mechanism**: Handles download failures with a retry strategy.
+5. **Error Logging**: Logs errors in an easy-to-read format.
 
-> Include any additional steps as needed.
+---
 
-## Features
+## 📂 Where to Find This Hook
 
-Description of the extension that expands upon high-level summary above.
+The full source code for the `useZipFiles` hook is available on GitHub. You can clone or download the repository here:
 
-This extension illustrates the following concepts:
+**GitHub Repository**: [https://github.com/joaojmendes/useZipFiles](https://github.com/joaojmendes/useZipFiles)
 
-- topic 1
-- topic 2
-- topic 3
+You can copy the source code and use it in your projects. this project has SPFx 1.20 webpart that shows how to use the hook.
 
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
+---
 
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
+## 🛠️ How to Install
 
-## References
+1. Clone the repository from GitHub:
 
-- [Getting started with SharePoint Framework](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
-- [Building for Microsoft teams](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/build-for-teams-overview)
-- [Use Microsoft Graph in your solution](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/using-microsoft-graph-apis)
-- [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/publish-to-marketplace-overview)
-- [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
+   ```bash
+   git clone https://github.com/joaojmendes/useZipFiles.git
